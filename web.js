@@ -3,9 +3,10 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
- var buff = fs.readFileSync(index.htmL);
- if (Buffer.isBuffer(buff){
- show = buff.tostring('utf8');
+ var buff = fs.readFileSync(index.html);
+ if (Buffer.isBuffer(buff)){
+ var show = buff.toString('utf8');
+}
  (response.send(show);
 });
 
