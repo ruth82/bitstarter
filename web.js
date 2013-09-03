@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
  if (Buffer.isBuffer(buff)){
  var show = buff.toString('utf8');
 }
- (response.send(show);
+ (response.send(show));
 });
 
 var port = process.env.PORT || 5000;
